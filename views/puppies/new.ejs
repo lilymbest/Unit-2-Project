@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/puppies" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name">
+  <label>Breed:</label>
+  <input type="text" name="breed">
+  <label>Age</label>
+  <input type="text" name="age">
+  <label>Behavior</label>
+  <select name="Behavior">
+    <option value="high">High Energy</option>
+    <option value="low">Low Energy</option>
+    <option value="medium">Medium</option>
+  </select>
+  <input type="submit" value="Find Match">
+</form>

@@ -1,8 +1,133 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ff859a;
 }
 
+nav {
+  background-image: linear-gradient(to bottom right, #ff8297, #ff9e80, #ff8800);
+  width: 100%;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 15vmin auto 15vmin 15vmin 15vmin;
+  margin-bottom: 0px;
+}
+
+a.one {
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  grid-column-start: 3;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 40px;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+a.one:hover {
+  color: white;
+}
+
+a.two {
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  grid-column-start: 4;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 39px;
+  padding-top: 10px;
+  width: 70px;
+  height: 50px;
+}
+
+a.two:hover {
+  color: white;
+  border: 3px solid white;
+}
+
+a.three {
+  text-decoration: none;
+  color: black;
+  grid-column-start: 5;
+  margin: 4px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+a.three:hover {
+  color: white;
+}
+
+img {
+  width: 80px;
+  height: 65px;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+p {
+  font-size: 28px;
+}
+
+body.bod {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
 a {
   color: #00B7FF;
+}
+  
+  
+table.two{
+  margin-top: 24px;
+  border: 3px solid white;
+  width: 350px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  height: 450px;
+  display: grid;
+  justify-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  border-spacing: 30px 1rem;
+}
+
+table.one {
+  margin-top: 24px;
+  border: 3px solid white;
+  width: 350px;
+  grid-column-start: 1;
+  height: 450px;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  border-spacing: 30px 1rem;
+}
+  
+main.tabletwo {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 50px;
+  grid-template-rows: 250px 250px;
+  grid-row-start: 1;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+th {
+  border: 3px solid white;
+  justify-content: space-between;
+  width: 94px;
 }

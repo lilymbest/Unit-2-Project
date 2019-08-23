@@ -8,7 +8,49 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Document</title>
 </head>
-<body>
-    
+<body class="bod">
+<main class="tabletwo">
+    <table class="one">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Breed</th>
+            <th>Age</th>
+            <th>Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% puppies.forEach(function(m) { %>
+            <tr>
+              <td><%= m.name %></td>
+              <td><%= m.breed %></td>
+              <td><%= m.age %></td>
+              <td><a href="/puppies/<%= m._id %>">DETAILS</a></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+            <table class="two">
+                <thead>
+                  <tr class="tr">
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Age</th>
+                    <th>Behavior</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% puppies.forEach(function(m) { %>
+                    <tr>
+                        <td><%= m.name %></td>
+                        <td><%= m.breed %></td>
+                        <td><%= m.age %></td>
+                      <td><a href="/puppies/<%= m._id %>">DETAILS</a></td>
+                    </tr>
+                    <img src="https://dog.ceo/api/breed/hound/images" alt="">
+                    <% }); %>
+                
+                  </tbody>
+                </table></main>
 </body>
 </html>
