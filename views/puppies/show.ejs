@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Name</div>
+  <div><%= puppies.name %></div>
+  <div>Breed</div>
+  <div><%= puppies.breed %></div>
+  <div>Age</div>
+  <div><%= puppies.age %></div>
+  <div>Rating: </div>
+  <div><%= puppies.energy %></div>
+  <div>Cast: </div>
+  <div><%= movie.cast.join(', ') %></div>
+  <div>Now Showing: </div>
+  <div><%= movie.nowShowing ? 'Yes' : 'Nope' %></div>
+</section>

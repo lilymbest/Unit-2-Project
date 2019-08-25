@@ -6,5 +6,6 @@ var puppyCtrl = require('../controllers/puppies');
 router.get('/', puppyCtrl.index);
 router.get('/new', puppyCtrl.new);
 router.post('/', puppyCtrl.create);
+router.get('/:id', puppyCtrl.show);
 
 module.exports = router;

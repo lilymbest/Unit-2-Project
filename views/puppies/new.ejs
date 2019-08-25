@@ -1,4 +1,5 @@
 <%- include('../partials/header') %>
+<link rel='stylesheet' href='/stylesheets/style.css' />
 
 <form id="new-form" action="/puppies" method="POST">
   <label>Name:</label>
@@ -8,7 +9,7 @@
   <label>Age</label>
   <input type="text" name="age">
   <label>Behavior</label>
-  <select name="Behavior">
+  <select name="behavior">
     <option value="high">High Energy</option>
     <option value="low">Low Energy</option>
     <option value="medium">Medium</option>
